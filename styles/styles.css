@@ -1,0 +1,115 @@
+.checkers {
+	width: 820px;
+	margin: 30px auto;
+	height: 820px;
+	background-color: black;
+	position: relative;
+	border: 10px solid black;
+}
+.line, .square {
+	position: absolute;
+}
+.square {
+	width: 100px;
+	height: 100px;
+}
+.line {
+	width: 800px;
+	height: 100px;
+	left: 0;
+}
+.line:nth-child(1) {
+	top: 0;
+}
+.line:nth-child(2) {
+	top: 100px;
+}
+.line:nth-child(3) {
+	top: 200px;
+}
+.line:nth-child(4) {
+	top: 300px;
+}
+.line:nth-child(5) {
+	top: 400px;
+}
+.line:nth-child(6) {
+	top: 500px;
+}
+.line:nth-child(7) {
+	top: 600px;
+}
+.line:nth-child(8) {
+	top: 700px;
+}
+.square:nth-child(1) {
+	left: 0;
+}
+.square:nth-child(2) {
+	left: 100px;
+}
+.square:nth-child(3) {
+	left: 200px;
+}
+.square:nth-child(4) {
+	left: 300px;
+}
+.square:nth-child(5) {
+	left: 400px;
+}
+.square:nth-child(6) {
+	left: 500px;
+}
+.square:nth-child(7) {
+	left: 600px;
+}
+.square:nth-child(8) {
+	left: 700px;
+}
+.line:nth-child(odd) .square:nth-child(odd) {
+	background-color: white;
+}
+.line:nth-child(even) .square:nth-child(even) {
+	background-color: white;
+}
+.line:nth-child(odd) .square:nth-child(even):before {
+	content: "";
+	background-color: white;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.line:nth-child(even) .square:nth-child(odd):before {
+	content: "";
+	background-color: white;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.line:nth-child(4) .square:nth-child(odd) {
+	display: none;
+}
+.line:nth-child(5) .square:nth-child(even) {
+	display: none;
+}
+.line:nth-child(6) .square:nth-child(odd):before {
+	background-color: green;
+}
+.line:nth-child(7) .square:nth-child(even):before {
+	background-color: green;
+}
+.line:nth-child(8) .square:nth-child(odd):before  {
+	background-color: green;
+}
